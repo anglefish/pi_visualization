@@ -6,9 +6,9 @@ import time
 turtle.setup(1.0, 1.0)
 t = turtle.Turtle()
 t.hideturtle()
-t.pensize(8)
+t.pensize(4)
 t.penup()
-t.goto(-1000, 0)
+t.goto(-1500, 800)
 t.pendown()
 t.speed(0)
 file = open('圆周率前100万位.txt')
@@ -21,22 +21,22 @@ color_fill = ['khaki', 'moccasin', 'lightcoral', 'lightsalmon', 'orchid', 'mediu
 def draw_dot(n: int, c: int):
     t.color(color_fill[n])
     t.begin_fill()
-    t.circle(60)
+    t.circle(20)
     t.end_fill()
     t.color(color[n])
-    t.circle(60)
+    t.circle(20)
     pos = t.pos()
-    t.penup()
-    t.goto(pos[0], pos[1] + 10)
-    t.pendown()
-    t.color("black")
-    t.write(n, align="center", font=("Arial", 64, "bold"))
+    # t.penup()
+    # t.goto(pos[0], pos[1] + 6)
+    # t.pendown()
+    # t.color("black")
+    # t.write(n, align="center", font=("Arial", 16, "normal"))
 
     t.penup()
     if c % 50 == 0:
-        t.goto(-1500, pos[1] - 200)
+        t.goto(-1500, pos[1] - 60)
     else:
-        t.goto(pos[0] + 200, pos[1])
+        t.goto(pos[0] + 60, pos[1])
     t.pendown()
 
 

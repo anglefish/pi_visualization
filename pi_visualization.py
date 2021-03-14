@@ -6,13 +6,12 @@ import time
 turtle.setup(1.0, 1.0)
 t = turtle.Turtle()
 t.hideturtle()
-t.pensize(8)
+t.pensize(4)
 t.penup()
 t.goto(0, -500)
 t.pendown()
 t.left(90)
-t.speed(9)
-time.sleep(10)
+t.speed(0)
 file = open('圆周率前100万位.txt')
 color = ['gold', 'goldenrod', 'red', 'firebrick', 'mediumvioletred', 'darkorchid', 'royalblue', 'lightseagreen',
          'mediumseagreen', 'greenyellow']
